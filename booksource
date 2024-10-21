@@ -1,0 +1,110 @@
+[
+	{
+    "bookSourceComment": "",
+    "bookSourceGroup": "🎉 精选",
+    "bookSourceName": "🎉 香书小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xbiqugu.net",
+    "customOrder": 453,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1721435783433,
+    "respondTime": 3409,
+    "ruleBookInfo": {
+      "author": "id.info@p.0@text",
+      "coverUrl": "id.fmimg@img@src",
+      "intro": "id.intro@p!0@text##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": ".con_top@a.-1@text&&id.info@p.2@text##小说|.*：|\\s..:.*",
+      "lastChapter": "id.info@a.-1@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "id.info@h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@textNodes"
+    },
+    "ruleExplore": {
+      "author": ".s5@text",
+      "bookList": ".l@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href##.+\\D((\\d+)\\d{3})\\D##/files/article/image/$2/$1/$1s.jpg###",
+      "kind": ".s3@textNodes##\\(|\\)",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "td.2@text",
+      "bookList": "tbody@tr!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "长生",
+      "coverUrl": "a.0@href##.+\\D((\\d+)\\d{3})\\D##/files/article/image/$2/$1/$1s.jpg###",
+      "kind": "td.3@text",
+      "lastChapter": "a.1@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dd@a",
+      "chapterName": "text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "href##$##,{'webView': true}"
+    },
+    "searchUrl": "/modules/article/waps.php,{\n  \"method\": \"post\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+  "bookSourceComment": "同站一大堆",
+    "bookSourceGroup": "🎄常用",
+    "bookSourceName": "笔趣阁222",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.bqg222.com",
+    "bookUrlPattern": "https://m.bqg222.com/read/\\d+/",
+    "customOrder": 159,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/xuanhuan/<,{{page}}.html>\n武侠::/wuxia/<,{{page}}.html>\n都市::/dushi/<,{{page}}.html>\n历史::/lishi/<,{{page}}.html>\n网游::/wangyou/<,{{page}}.html>\n科幻::/kehuan/<,{{page}}.html>\n女生::/mm/<,{{page}}.html>\n全本::/finish/<,{{page}}.html>",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1692852251617,
+    "respondTime": 6807,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "{{$.}}list.html",
+      "wordCount": "{{@@text.字数@text##字数：}}"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##（.*阅读模式.*）|请收藏.*com"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/s?q={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]
